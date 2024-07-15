@@ -1,0 +1,70 @@
+---
+layout: 'base.html'
+description: "Meta description for the page"
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/laptop.jpg', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/working.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">About Spring-IT</h2>
+      <p class="cs-text">
+        Spring-IT is an IT services provider dedicated to helping small and medium-sized businesses across London and Southeast England thrive in the digital age. Based in Bexleyheath, we specialize in offering tailored IT solutions that enhance online presence, boost efficiency, and drive business growth.
+            </p>
+      <p class="cs-text">
+        At Spring-IT, we pride ourselves on our commitment to excellence and customer satisfaction. Our team of seasoned professionals brings years of industry experience and a passion for technology to every project. We work closely with our clients to understand their unique needs and deliver customized solutions that achieve real results.
+            </p>
+      <!-- <div class="cs-flex-group">
+        <p class="cs-flex-p">
+                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                </p>
+
+      </div>
+      <a href="" class="button-solid">More About Us</a> -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+      Partner with Spring-IT to transform your digital presence. Our expert team is ready to help you achieve your business goals with customized IT solutions tailored to your needs. Click the button below to get started!
+        </p>
+    <a href="/contact" class="button-solid">Contact Us</a>
+  </div>
+  {% image './src/images/landing2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+</section>
